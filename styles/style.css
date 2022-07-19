@@ -162,6 +162,12 @@ h1 {
     color: #161616B2;
 }
 
+.view-all {
+    display: none;
+    margin: 50px auto;
+}
+
+
 /* footer */
 .footer-container {
     width: 100%;
@@ -184,6 +190,7 @@ h1 {
 
 .footer-options {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 
@@ -295,24 +302,124 @@ h1 {
         max-width: 334px;
         margin: 24px 0;
     }
+
+    .footer-options {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-options p {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 10px 0px;
+    }
 }
 
-.footer-options {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-.footer-options p {
-    font-size: 14px;
-    font-weight: 400;
-    margin: 10px 0px;
-}
 
 
 /* Tablet Devices */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    body {
-        background-color: darkblue;
+
+    /* common styles */
+
+
+    .container {
+        max-width: 734px;
+        margin: 50px auto 70px;
     }
+
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .link-button {
+        padding: 12px;
+    }
+
+
+
+
+    /*------------------------*/
+    /* top banner */
+    .top-banner {
+
+        padding: 58px 17px 0 76px;
+
+    }
+
+
+
+
+    .top-banner-description p {
+        font-size: 14px;
+        margin-bottom: 20px;
+
+    }
+
+    .top-banner-thumbnail {
+        margin-left: 0px;
+    }
+
+
+
+    /* sidebar and blogs */
+    .sidebar-blogs-container {
+        flex-direction: column;
+    }
+
+    /* sidebar */
+    .sidebar {
+        min-width: auto;
+        height: auto;
+        padding: 0;
+        margin-right: 0;
+        background-color: white;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sidebar ul li {
+        width: 230px;
+    }
+
+
+
+    /* blogs */
+
+
+    .blogs {
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 20px;
+    }
+
+    .view-all {
+        display: block;
+    }
+
+    /* footer */
+    .footer-container {
+        padding: 70px 0;
+
+    }
+
+
+    .footer-container hr {
+        margin: 30px auto;
+        max-width: 734px;
+    }
+
+    .footer-options {
+        max-width: 734px;
+        margin: 0 auto;
+
+    }
+
 }
