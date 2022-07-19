@@ -1,0 +1,71 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lora:ital@1&family=Poppins:wght@500&display=swap');
+
+/* custom properties */
+:root{
+    --primary-color: #161616;
+    --button-background-color: #DD0000;
+}
+
+
+/* common styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    background-color: var(--primary-color);
+    max-width: 1321px;
+    margin: 50px auto 130px;
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;
+}
+.link-button{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    background-color: var(--button-background-color);
+    padding: 16px 25px;
+    border-radius: 5px;
+}
+
+/* top banner */
+.top-banner{
+    display: flex;
+    align-items: center;
+    padding: 33px 79px 0 106px;
+}
+
+.top-banner-description{
+    color: white;
+    width: 50%;
+    padding-right: 24px;
+}
+
+
+.top-banner-description p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    
+}
+
+.top-banner-thumbnail{
+    width: 50%;
+}
+
+.top-banner-thumbnail img{
+    width: 100%;
+    
+}
