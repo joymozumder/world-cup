@@ -345,7 +345,9 @@ h1 {
         font-size: 14px;
         font-weight: 400;
         margin-bottom: 16px;
-
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .top-banner-thumbnail {
