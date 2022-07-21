@@ -521,11 +521,11 @@ h1 {
 
     .view-all {
         display: block;
+        text-align: center;
     }
 
     .view-all a {
         padding: 12px 29px;
-        text-align: center;
     }
 
     /*Matches*/
