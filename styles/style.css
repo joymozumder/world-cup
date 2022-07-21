@@ -58,6 +58,7 @@ h1 {
 
 .top-banner a {
     transition: transform 0.5s ease-in;
+    border-radius: 5px;
 }
 
 .top-banner:hover a {
