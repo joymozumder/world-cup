@@ -3,7 +3,7 @@
 
 /* custom properties */
 :root {
-    --primary-color: #161616;
+    --primary-color: #130840;
     --button-background-color: #DD0000;
 }
 
@@ -184,6 +184,57 @@ h1 {
     margin: 50px auto;
 }
 
+/* Upcoming Matches */
+#matches-con {
+    flex-grow: 1;
+}
+
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px 24px;
+}
+
+.match {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 53px 30px;
+}
+
+.match-teams {
+    display: flex;
+    align-items: center;
+}
+
+.match-teams .team {
+    width: 93px;
+}
+
+.team .img {
+    width: 100%;
+}
+
+.match-teams .vs {
+    width: 20px;
+    font-size: 16px;
+    margin: 0 20px;
+}
+
+.match-info {
+    text-align: center;
+}
+
+.match-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0 10px;
+}
+
+.match-info p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4D4D4D;
+}
 
 /* footer */
 .footer-container {
@@ -335,6 +386,11 @@ h1 {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    /*Matches*/
+    .matches {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 
     /* footer */
     .footer-container {
@@ -462,6 +518,11 @@ h1 {
 
     .view-all a {
         padding: 12px 29px;
+    }
+
+    /*Matches*/
+    .matches {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* footer */
